@@ -1,10 +1,8 @@
-import {Router} from 'express';
+import { Router } from 'express';
 
 const routes = new Router();
 
-routes.get('/', (req, res)=>{
-  return res.json({message: "Hellow Omnistack"});
-})
+routes.get('/', (req, res) => res.json({ message: 'Hellow Omnistack' }));
 
 
 export default routes;
