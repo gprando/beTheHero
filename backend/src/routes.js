@@ -1,14 +1,12 @@
 import { Router } from 'express';
+ 
+import OngController from './controllers/OngController';
 
 const routes = new Router();
 
-routes.post('/ongs', (req, res) =>{
-  const data = req.body;
+routes.get('/ongs', OngController.index);
 
-  console.log(data);
-  res.json({ message: 'Hellow Omnistack' });
-} 
-)
+routes.post('/ongs', OngController.store);
 
 export default routes;
 
