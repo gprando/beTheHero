@@ -1,21 +1,18 @@
-import connection from '../database/connection';
+const connection = require("../database/connection");
 
-class SessionController {
+module.exports = {
   async store(req, res) {
-    const {id} = req.body;
+    const { id } = req.body;
 
-    const ong = await connection('ongs')
-      .where('id', id)
-      .select('name')
+    const ong = await connection("ongs")
+      .where("id", id)
+      .select("name")
       .first();
 
-    if(!ong){
-      return res.status(400).json({err : "No ong found "});
+    if (!ong) {
+      return res.status(400).json({ error: "Ong not found" });
     }
 
     return res.json(ong);
   }
-
-}
- 
-export default new SessionController();
+};
