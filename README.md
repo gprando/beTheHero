@@ -1,7 +1,6 @@
 <h1 id="titulo" align="center"  > Be The Hero
 <br>
 
-<p align="center">The monorepo of a mobile and web app, to locate devs in your vicinity, built in a week Omnistackt</p>
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
@@ -20,12 +19,11 @@ This app features all the latest tools and practices in mobile development!
 - ⚛️ **React Native** — A lib that provides a way to create native apps for Android and iOS
 - 💹 **Node Js** — A web framework for Node Js
 - 📄 **SQTLite** — A cross-platform and open-source document-oriented database
-- ♻️ **Socket IO** — A library for realtime web applications
 
 ## Getting started
 
 1. Clone this repo using `https://github.com/gprando/beTheHero.git`
-2. Move yourself to the appropriate directory: `cd DevRadar`<br />
+2. Move yourself to the appropriate directory: `cd beTheHero`<br />
 
 
 ### Getting started with the backend server
